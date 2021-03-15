@@ -23,7 +23,7 @@ jobs:
     # Username used to log against the Docker registry
         username: naveentak
     # Password or personal access token used to log against the Docker registry
-        password: b753d91a65da377e73c9b81138461b4b50f23c21
+        password: 9bdb5537-a587-49ff-ac0d-56ca2e1aa3ce
     - name: Push the Docker image
       run: docker push naveentak/thxbudimg
       
