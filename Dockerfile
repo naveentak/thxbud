@@ -8,6 +8,7 @@ RUN apt-get update && \
     apt install apache2 -y && \
     apt-get clean
 
+COPY index.html /var/www/html
 
 #Port expose on host
 EXPOSE 80

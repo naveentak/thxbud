@@ -1,0 +1,4 @@
+34bf2b78da
+
+curl -X GET 'https://api.newrelic.com/v2/applications.json' \
+     -H "Api-Key:NRAK-AD93LXJZPL5WTWNQRN0W062I8R5" -i
