@@ -9,7 +9,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v2
@@ -26,4 +26,7 @@ jobs:
         password: 9bdb5537-a587-49ff-ac0d-56ca2e1aa3ce
     - name: Push the Docker image
       run: docker push naveentak/thxbudimg
+      
+    - name: Run the container
+      run: docker run -t -d -p 8090:80 -P naveentak/thxbudimg
       
